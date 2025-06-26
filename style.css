@@ -1,0 +1,279 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+header {
+  background: black;
+  height: 80px;
+  width: 100%;
+}
+header ul {
+  position: absolute;
+  right: 5vw;
+  top: 0;
+  line-height: 80px;
+}
+header li {
+  display: inline;
+  margin-right: 4vw;
+}
+h1 {
+  color: white;
+  position: absolute;
+  left: 120px;
+  top: 0;
+  line-height: 80px;
+  background-image: url(images/logo.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 160px;
+  height: 120px;
+  text-indent: -9999px;
+}
+header a {
+  color: white;
+  text-decoration: none;
+}
+header a:hover {
+  text-decoration: underline;
+}
+.news {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  height: 110vh;
+  width: 100%;
+  background-image: url("images/band.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+.message {
+  background-color: rgba(246, 246, 18, 0.919);
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.message h2 {
+  font-size: 39px;
+}
+.message p {
+  font-size: 15px;
+  margin: 4px 0;
+}
+footer {
+  background-color: rgba(246, 246, 18, 0.919);
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer a {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 10px;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+.music {
+  display: flex;
+}
+.back {
+  width: 14%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  color: #ffffff;
+}
+.music img {
+  width: 36%;
+}
+.musicname01 {
+  width: 25%;
+  background-color: rgb(18, 24, 58);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: white;
+}
+.musicname02 {
+  width: 25%;
+  background-color: rgb(18, 24, 58);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: white;
+}
+.music a {
+  color: rgb(255, 255, 255);
+  font-family: KaiTi;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 15px 10px;
+}
+.introduction {
+  display: flex;
+}
+.introduction img {
+  width: 60%;
+}
+.info {
+  width: 40%;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  align-items: left;
+  padding: 40px;
+}
+.info h2 {
+  color: yellow;
+  font-family: Microsoft JhengHei;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.info p {
+  color: yellow;
+  font-family: Microsoft JhengHei;
+  font-size: 16px;
+  text-align: left;
+  height: 4em;
+}
+.info a {
+  color: black;
+  text-decoration: none;
+  border: 1px solid #000000;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.member {
+  display: flex;
+  background-color: rgb(0, 0, 0);
+  justify-content: space-between;
+  align-items: top;
+  padding: 100px 180px 80px;
+  font-family: KaiTi;
+}
+.member div {
+  width: 300px;
+  text-align: left;
+}
+.member img {
+  width: 100%;
+  border-radius: 10px;
+}
+.member h3 {
+  font-size: 21px;
+  margin: 20px 0;
+}
+.member p {
+  font-size: 14px;
+  line-height: 1.6em;
+}
+.little {
+  color: white;
+}
+.hitori {
+  color: pink;
+}
+.nijika {
+  color: yellow;
+}
+.yamada {
+  color: rgb(7, 145, 243);
+}
+.kita {
+  color: rgb(232, 74, 35);
+}
+.menu {
+  display: none;
+}
+/*响应式设计语法*/
+@media screen and (max-width: 768px) {
+  header ul {
+    display: none;
+  }
+  header h1 {
+    left: 50%;
+    transform: translatex(-50%);
+  }
+  .message h2 {
+    font-size: 20px;
+  }
+  .menu {
+    display: block;
+    background-color: transparent;
+    color: white;
+    font-size: 35px;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    border: none;
+    cursor: pointer;
+  }
+  .introduction {
+    flex-direction: column;
+  }
+  .introduction img {
+    width: 100%;
+  }
+  .info {
+    width: 100%;
+    padding: 40px 0;
+  }
+  .message h2 {
+    font-size: 28px;
+  }
+  .message p {
+    font-size: 12px;
+  }
+  .info h2 {
+    font-size: 24px;
+    margin: 20px 40px;
+  }
+  .info p {
+    font-size: 15px;
+    margin: 2px 40px;
+  }
+  .member {
+    flex-direction: column;
+    padding: 10px 100px;
+  }
+  .member div {
+    padding-top: 16px;
+  }
+  .member img {
+    width: 140%;
+  }
+  .music {
+    flex-direction: column;
+  }
+  .music img {
+    width: 100%;
+  }
+  .music a {
+    padding: 16px 60px;
+  }
+  .musicname01 {
+    width: 100%;
+  }
+  .musicname02 {
+    width: 100%;
+  }
+  h1 {
+    display: none;
+  }
+  .back {
+    height: 80px;
+    width: 100%;
+  }
+}
